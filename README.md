@@ -2,7 +2,7 @@
 
 This repository contains the dataset, experimental results, and analysis code supporting the following publication:
 
-> Tanner, F. and Klawa, T., "Evaluating Prompt Design Choices for Object Detection, Counting, and Classification in Overhead Imagery," in *Proc. SPIE Defense + Commercial Sensing*, 2026.
+> Tanner, F, "Evaluating Prompt Design Choices for Object Detection, Counting, and Classification in Overhead Imagery," in *Proc. SPIE Defense + Commercial Sensing*, 2026.
 
 ## Summary
 
