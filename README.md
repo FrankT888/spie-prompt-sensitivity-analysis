@@ -28,6 +28,11 @@ dataset/                    # 300-image balanced RarePlanes subset
 experiment-results/         # Model evaluation results (3 models x 3 conditions)
   {model}_{condition}.csv   # Per-image predictions, accuracies, costs, and raw LLM responses
 
+prompts/                    # Full prompt text for each experimental condition
+  simple.md                 # Condition 1: Simple global task-scoped instruction
+  gsd-text.md               # Condition 2: GSD-augmented prompt with size-bracket guidance
+  gsd-images.md             # Condition 3: Visual ontology prompt with per-class reference images
+
 charts/                     # Confusion matrix figures
 ```
 
