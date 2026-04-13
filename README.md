@@ -1,4 +1,4 @@
-# Evaluating Prompt Design Choices for Object Detection, Counting, and Classification in Overhead Imagery
+# Benchmarking prompt design choices for spatial reasoning and aircraft classification in overhead imagery: toward world model grounding
 
 This repository contains the dataset, experimental results, and analysis code supporting the following publication:
 
