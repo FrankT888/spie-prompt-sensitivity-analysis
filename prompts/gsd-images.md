@@ -91,7 +91,7 @@ Object Classification Ontology (research-optimized preset):
     "tags": [],
     "hasReferenceImage": true,
     "hasReferenceLabels": true,
-    "referenceSource": "train / 115_104001004B8E2D00_tile_346_png.rf.839fb4b475f347e5051c4ecf5903000a.jpg",
+    "referenceSource": "test / 105_104001003108D900_tile_47.png",
     "decisionNotes": [
       "Use for genuinely small civil transports, light props, or compact utility aircraft rather than clipped medium civil jets.",
       "This class should usually align with clearly small overall scale and light-aircraft morphology.",
@@ -119,7 +119,7 @@ Object Classification Ontology (research-optimized preset):
     "tags": [],
     "hasReferenceImage": true,
     "hasReferenceLabels": true,
-    "referenceSource": "train / 106_104001003D8DB300_tile_99_png.rf.c910232dc2e58fedb96f35434989a6d6.jpg",
+    "referenceSource": "test / 106_104001003D8DB300_tile_99.png",
     "decisionNotes": [
       "This is the default civil-jet class for narrow-body, regional, and business-jet morphology in the mid-size regime.",
       "If the aircraft has a civil jet/airliner planform but the measured length is shortened by cropping, truncation, or partial visibility, keep Medium Civil Transport unless there is strong evidence for Small or Large.",
@@ -147,7 +147,7 @@ Object Classification Ontology (research-optimized preset):
     "tags": [],
     "hasReferenceImage": true,
     "hasReferenceLabels": true,
-    "referenceSource": "train / 127_104001002B3BB400_tile_658_png.rf.861b93a6fb5e7d59d691dc6e013aadad.jpg",
+    "referenceSource": "test / 31_10400100443CFD00_tile_817.png",
     "decisionNotes": [
       "Prefer this class when the visible airframe shows clearly larger fuselage bulk, wide-body proportions, or very large transport geometry from the airframe itself rather than from airport context.",
       "If only part of the aircraft is visible, treat the observed length as a lower bound and use residual fuselage width, tailplane size, and wing root bulk before down-classing."
@@ -174,7 +174,7 @@ Object Classification Ontology (research-optimized preset):
     "tags": [],
     "hasReferenceImage": true,
     "hasReferenceLabels": true,
-    "referenceSource": "train / 115_104001004B8E2D00_tile_631_png.rf.2e2dd609e8bf1d254dcbc0d55224885e.jpg",
+    "referenceSource": "test / 55_1040010049CD5600_tile_308.png",
     "decisionNotes": [
       "Require affirmative military-support cues such as a boxy cargo fuselage, ramp tail, turboprop transport layout, AWACS/radar-dome mission equipment, or other clearly military support-aircraft morphology.",
       "Large size alone is not sufficient."
@@ -201,7 +201,7 @@ Object Classification Ontology (research-optimized preset):
     "tags": [],
     "hasReferenceImage": true,
     "hasReferenceLabels": true,
-    "referenceSource": "train / 105_104001003108D900_tile_47_png.rf.d314f7220809ce2e76838a32db5c08e5.jpg",
+    "referenceSource": "train / 128_104001004215BF00_tile_1888.png",
     "decisionNotes": [
       "Require genuine combat-jet geometry such as fighter planform, combat proportions, or other clearly military high-performance cues.",
       "Use with caution on very small or blurry candidates."
@@ -220,51 +220,50 @@ Object Classification Ontology (research-optimized preset):
 **Text block -- Ontology support example (Class 0):**
 
 Support image for Class 0: Small Civil Transport/Utility (primary)
-Source chip: train / 115_104001004B8E2D00_tile_346_png.rf.839fb4b475f347e5051c4ecf5903000a.jpg
+Source chip: test / 105_104001003108D900_tile_47.png
 Image size: 512x512 pixels
 This support chip contains 1 labeled object(s).
 Bounding boxes:
-  1. class=0; bbox_pixels x=0, y=128, w=156, h=175; bbox_normalized xc=0.1523, yc=0.4209, w=0.3047, h=0.3418
+  1. class=0; bbox_pixels x=276, y=259, w=60, h=22; bbox_normalized xc=0.5986, yc=0.5271, w=0.1175, h=0.0425
 
 **Text block -- Ontology support example (Class 1):**
 
 Support image for Class 1: Medium Civil Transport/Utility (primary)
-Source chip: train / 106_104001003D8DB300_tile_99_png.rf.c910232dc2e58fedb96f35434989a6d6.jpg
+Source chip: test / 106_104001003D8DB300_tile_99.png
 Image size: 512x512 pixels
 This support chip contains 3 labeled object(s).
 Bounding boxes:
-  1. class=1; bbox_pixels x=0, y=86, w=38, h=34; bbox_normalized xc=0.0371, yc=0.2012, w=0.0742, h=0.0664
-  2. class=1; bbox_pixels x=29, y=131, w=49, h=45; bbox_normalized xc=0.1045, yc=0.2998, w=0.0957, h=0.0879
-  3. class=1; bbox_pixels x=327, y=11, w=54, h=49; bbox_normalized xc=0.6914, yc=0.0693, w=0.1055, h=0.0957
+  1. class=1; bbox_pixels x=0, y=86, w=38, h=34; bbox_normalized xc=0.0373, yc=0.2025, w=0.0747, h=0.0672
+  2. class=1; bbox_pixels x=29, y=132, w=49, h=45; bbox_normalized xc=0.1055, yc=0.3011, w=0.0961, h=0.0875
+  3. class=1; bbox_pixels x=327, y=12, w=54, h=49; bbox_normalized xc=0.6921, yc=0.0707, w=0.1059, h=0.0952
 
 **Text block -- Ontology support example (Class 2):**
 
 Support image for Class 2: Large Civil Transport/Utility (primary)
-Source chip: train / 127_104001002B3BB400_tile_658_png.rf.861b93a6fb5e7d59d691dc6e013aadad.jpg
+Source chip: test / 31_10400100443CFD00_tile_817.png
 Image size: 512x512 pixels
 This support chip contains 1 labeled object(s).
 Bounding boxes:
-  1. class=3; bbox_pixels x=69, y=186, w=39, h=38; bbox_normalized xc=0.1729, yc=0.4004, w=0.0762, h=0.0742
+  1. class=2; bbox_pixels x=31, y=172, w=163, h=163; bbox_normalized xc=0.2204, yc=0.4947, w=0.3189, h=0.3182
 
 **Text block -- Ontology support example (Class 3):**
 
 Support image for Class 3: Military Transport/Utility/AWAC (primary)
-Source chip: train / 115_104001004B8E2D00_tile_631_png.rf.2e2dd609e8bf1d254dcbc0d55224885e.jpg
+Source chip: test / 55_1040010049CD5600_tile_308.png
 Image size: 512x512 pixels
-This support chip contains 3 labeled object(s).
+This support chip contains 1 labeled object(s).
 Bounding boxes:
-  1. class=5; bbox_pixels x=131, y=450, w=122, h=61; bbox_normalized xc=0.3750, yc=0.9385, w=0.2383, h=0.1191
-  2. class=5; bbox_pixels x=280, y=364, w=123, h=104; bbox_normalized xc=0.6670, yc=0.8125, w=0.2402, h=0.2031
-  3. class=5; bbox_pixels x=426, y=277, w=86, h=104; bbox_normalized xc=0.9160, yc=0.6426, w=0.1680, h=0.2031
+  1. class=3; bbox_pixels x=276, y=389, w=69, h=57; bbox_normalized xc=0.6055, yc=0.8160, w=0.1343, h=0.1109
 
 **Text block -- Ontology support example (Class 4):**
 
 Support image for Class 4: Military Fighter/Interceptor/Attack (primary)
-Source chip: train / 105_104001003108D900_tile_47_png.rf.d314f7220809ce2e76838a32db5c08e5.jpg
+Source chip: train / 128_104001004215BF00_tile_1888.png
 Image size: 512x512 pixels
-This support chip contains 1 labeled object(s).
+This support chip contains 2 labeled object(s).
 Bounding boxes:
-  1. class=6; bbox_pixels x=276, y=258, w=60, h=22; bbox_normalized xc=0.5977, yc=0.5254, w=0.1172, h=0.0430
+  1. class=4; bbox_pixels x=82, y=23, w=49, h=51; bbox_normalized xc=0.2077, yc=0.0947, w=0.0950, h=0.1003
+  2. class=4; bbox_pixels x=202, y=94, w=36, h=54; bbox_normalized xc=0.4295, yc=0.2362, w=0.0702, h=0.1051
 
 **Text block -- Task instruction:**
 

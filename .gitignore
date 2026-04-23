@@ -7,3 +7,7 @@ __pycache__/
 .claude/
 output/
 experiment-results/prior-study/
+dataset_annotated/
+tmp*
+scripts/
+prompts/reference_images/annotated_*

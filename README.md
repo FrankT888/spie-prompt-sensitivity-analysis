@@ -32,9 +32,26 @@ prompts/                    # Full prompt text for each experimental condition
   simple.md                 # Condition 1: Simple global task-scoped instruction
   gsd-text.md               # Condition 2: GSD-augmented prompt with size-bracket guidance
   gsd-images.md             # Condition 3: Visual ontology prompt with per-class reference images
+  reference_images/         # Per-class reference image chips used by gsd-images.md
+    105_104001003108D900_tile_47.png   # Class 0: Small Civil Transport/Utility
+    106_104001003D8DB300_tile_99.png   # Class 1: Medium Civil Transport/Utility
+    31_10400100443CFD00_tile_817.png   # Class 2: Large Civil Transport/Utility
+    55_1040010049CD5600_tile_308.png   # Class 3: Military Transport/Utility/AWAC
+    128_104001004215BF00_tile_1888.png # Class 4: Military Fighter/Interceptor/Attack
+    annotated_ground_truth/   # Same tiles with RarePlanes GeoJSON role labels overlaid
+    annotated_prompt_claimed/ # Same tiles with the class labels asserted in gsd-images.md
 
 charts/                     # Confusion matrix figures
 ```
+
+The five reference image chips in `prompts/reference_images/` are the per-class visual exemplars attached to the Visual Ontology Prompt (Condition 3). Four come from the RarePlanes `real/test/PS-RGB_tiled/` split and one (Class 4 Military Fighter) comes from `real/train/PS-RGB_tiled/` — the latter because there is no clean single-class non-eval-overlap fighter tile in the test split. None of the five reference tiles is also present in the 300-image evaluation subset under `dataset/`. The per-chip bounding-box metadata and class-to-tile mapping are recorded inline in `prompts/gsd-images.md`.
+
+Two annotated renderings of each reference chip are provided for inspection:
+
+- `annotated_ground_truth/` — bounding boxes drawn from the authoritative RarePlanes GeoJSON polygons, labeled with the GeoJSON `role` field.
+- `annotated_prompt_claimed/` — identical boxes labeled with the class name asserted by `prompts/gsd-images.md` (the label the MLLM was shown).
+
+Rendering is produced by `scripts/render_reference_annotations.py`, which projects GeoJSON WGS84 polygons into pixel space using each tile's GDAL `.aux.xml` GeoTransform sidecar and also copies source PNGs into `reference_images/`. Comparing the two annotated subfolders side-by-side makes any disagreement between RarePlanes ground truth and the prompt's claimed exemplar class visible; for the current reference set, the two renderings match for all five tiles.
 
 ## Dataset Attribution
 
